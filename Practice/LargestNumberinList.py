@@ -9,6 +9,5 @@ max = a[0]
 for i in range(Length):
     if a[i]> max:
         max = a[i]
-
-
+        
         print(f"{a[i]} is max.")
