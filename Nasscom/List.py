@@ -4,7 +4,7 @@ list3 = [3.45, 'Vinod', 'Jasmine', 20]
 list4= [3,2,4,6,7,9,1]
 
 #indexing
-print(list1[2]);
+print(list1[2])
 
 #slicing
 print(list3[::-1])
