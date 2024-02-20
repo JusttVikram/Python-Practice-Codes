@@ -5,3 +5,9 @@ squared_numbers = [num ** 2 for num in numbers]
 
 # Print the squared numbers
 print(squared_numbers)
+
+
+#List Comprehension for filteration
+
+s = [i for i in range(10) if i%2==0]
+print(s)
