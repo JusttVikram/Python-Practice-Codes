@@ -17,3 +17,15 @@ class B:
 age = input("Enter your age : ")
 name = input("Enter your name : ")
 B.walks(name, age)
+
+
+class C:
+    def Details(age, name, address):
+        print(age, name, address, sep=" ")
+
+age = input("Enter your age : ")
+name = input("Enter your name : ")
+address = input("Enter your address : ")
+
+
+C.Details(age,name, address)
