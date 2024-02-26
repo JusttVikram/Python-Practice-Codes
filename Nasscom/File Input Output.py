@@ -5,5 +5,3 @@ print(data)
 print(type(data))
 
 
-
-f.close()
