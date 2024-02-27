@@ -1,6 +1,0 @@
-This is a sample text file.
-It can contain any text you want.
-You can write multiple lines of text.
-Feel free to add more content.
-
-Yeh hai naya content. 
