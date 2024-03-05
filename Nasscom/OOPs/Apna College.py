@@ -1,10 +1,26 @@
 class student:
-    def __init__(self):
+    def __init__(self,fullname, age):
+        self.name = fullname
+        self.age = age
         print("Adding new student to the database...")
-    name = input('Enter the name of student : ')
 
-s1 = student()
-print("Student's name is : ",s1.name)
+s1 = student("Karan",18)
+print(s1.name)
+print(s1.age)
+
+s2= student("Arjun", 20)
+print(s2.name)
+
+
+
+
+
+
+
+
+
+
+
 
 # class car:
 #     color = "Black"
