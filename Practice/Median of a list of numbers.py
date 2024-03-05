@@ -10,6 +10,7 @@ def find_median(numbers):
 
     return median
 
+
 # Example usage
 numbers = [5, 2, 9, 1, 7]
 median = find_median(numbers)
