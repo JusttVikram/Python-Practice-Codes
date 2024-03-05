@@ -23,5 +23,3 @@ input_string = input("Enter a string: ")
 result = permute(input_string)
 print("All permutations of the string:", result)
 
-for i in range(5):
-    print(i , end="", sep='/')
