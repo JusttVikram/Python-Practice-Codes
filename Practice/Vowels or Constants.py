@@ -5,6 +5,7 @@ def check_vowel_or_consonant(char):
     else:
         return "Consonant"
 
+
 character = input("Enter a character : ")
 result = check_vowel_or_consonant(character)
 print(f"The character '{character}' is a {result}.")
