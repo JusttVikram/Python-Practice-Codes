@@ -22,3 +22,4 @@ def permute(string):
 input_string = input("Enter a string: ")
 result = permute(input_string)
 print("All permutations of the string:", result)
+
