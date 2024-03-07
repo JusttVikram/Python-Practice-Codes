@@ -1,4 +1,5 @@
 class student:
+    college_name = "ACE"
     def __init__(self,fullname, age):
         self.name = fullname
         self.age = age
@@ -10,6 +11,7 @@ print(s1.age)
 
 s2= student("Arjun", 20)
 print(s2.name)
+print(s2.college_name)
 
 
 
