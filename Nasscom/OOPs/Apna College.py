@@ -1,33 +1,29 @@
-class student:
+class Student:
     college_name = "ACE"
-    def __init__(self,fullname, age):
+
+    def __init__(self, fullname, age):
         self.name = fullname
         self.age = age
         print("Adding new student to the database...")
 
-s1 = student("Karan",18)
+    def welcome(self):
+        print('Welcome', self.name)
+
+    def get_age(self):
+        print('Your age : ', self.age)
+
+
+s1 = Student("Karan", 18)
 print(s1.name)
 print(s1.age)
+s1.welcome()
+s1.get_age()
 
-s2= student("Arjun", 20)
+s2 = Student("Arjun", 20)
 print(s2.name)
 print(s2.college_name)
+s2.welcome()
+s2.get_age()
 
 
 
-
-
-
-
-
-
-
-
-
-# class car:
-#     color = "Black"
-#     brand = "Toyota"
-
-# c1 = car()
-# print(c1.brand)
-# print(c1.color)
