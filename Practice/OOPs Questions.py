@@ -27,21 +27,3 @@ class Account:
         print('Your account balance is : ', self.balance)
 
 
-class Car:
-    color = 'Zed Black'
-
-    @staticmethod
-    def start():
-        print('Vroom Vroom... Car Started.')
-
-    @staticmethod
-    def stop():
-        print('Hussshhhhh... Car Stopped.')
-
-
-class BMWCar(Car):
-    def __init__(self, name):
-        self.name = name
-        print('Car Created.')
-
-
