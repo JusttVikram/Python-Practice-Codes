@@ -45,21 +45,4 @@ class BMWCar(Car):
         print('Car Created.')
 
 
-class A:
-    varA = 'Welcome to class A'
-
-
-class B:
-    varB = 'Welcome to class B'
-
-
-class C(A, B):
-    varC = 'Welcome to class C'
-
-
-obj1 = C()
-print(obj1.varA)
-print(obj1.varB)
-print(obj1.varC)
-
-
+f
