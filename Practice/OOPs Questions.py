@@ -27,21 +27,44 @@ class Account:
         print('Your account balance is : ', self.balance)
 
 
-class Car:
-    color = 'Zed Black'
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+        print('Circle Created.')
 
-    @staticmethod
-    def start():
-        print('Vroom Vroom... Car Started.')
+    def calculate_area(self):
+        area = (3.14 * self.radius ** 2)
+        print(f'Area of the circle is : {area}')
 
-    @staticmethod
-    def stop():
-        print('Hussshhhhh... Car Stopped.')
+    def calculate_perimeter(self):
+        perimeter = (2 * 3.14 * self.radius)
+        print(f'Perimeter of the circle is : {perimeter}')
 
 
-class BMWCar(Car):
-    def __init__(self, name):
+class Employee:
+    def __init__(self, role, department, salary):
+        self.role = role
+        self.department = department
+        self.salary = salary
+
+    def show_details(self):
+        print(f'Role of the Employee is : {self.role}.')
+        print(f'Department of the Employee is : {self.department}.')
+        print(f'Salary of the Employee is : Rs.{self.salary}.')
+
+
+class Engineer(Employee):
+    def __init__(self, name, age):
         self.name = name
-        print('Car Created.')
+        self.age = age
+        super().__init__('Engineer', 'IT', '80,000')
 
+
+class Order:
+    def __init__(self, item, price):
+        self.item = item
+        self.price = price
+
+    def __gt__(self, other):
+        return self.price > other.price
 
