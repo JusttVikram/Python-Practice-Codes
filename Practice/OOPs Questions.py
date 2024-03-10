@@ -27,6 +27,7 @@ class Account:
         print('Your account balance is : ', self.balance)
 
 
+<<<<<<< HEAD
 class Circle:
     def __init__(self, radius):
         self.radius = radius
@@ -68,3 +69,5 @@ class Order:
     def __gt__(self, other):
         return self.price > other.price
 
+=======
+>>>>>>> 42dba1c1bc2fb92fda997ea9edc67b8ddaa29432
