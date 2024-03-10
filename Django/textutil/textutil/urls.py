@@ -18,7 +18,16 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index')
+    path('', views.index, name='index'),
+    path('charcount', views.charcount, name='charcount'),
+    path('removepunc', views.removepunc, name='removepunc'),
+    path('captfirst', views.captfirst, name='captfirst'),
+    path('newlineremover', views.newlineremover, name='newlineremover'),
+    path('spaceremover', views.spaceremover, name='spaceremover')
 ]
+
+
+
