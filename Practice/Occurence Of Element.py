@@ -24,4 +24,4 @@ print(char_frequency)
 list1 = [1, 1, 1, 2, 2, 4, 5, 6, 8, 65, 0]
 target = 34
 
-# print(f"{x} has {Count(list, x)} occurrences.")
+print(f"{x} has {Count(list, x)} occurrences.")
