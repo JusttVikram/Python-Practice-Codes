@@ -7,7 +7,7 @@ def Count(list, target):
     return count
 
 
-def char_count_for_loop(String):
+def char_count(String):
     char_dict = {}
     for char in string:
         if char in char_dict:
@@ -18,7 +18,7 @@ def char_count_for_loop(String):
 
 
 string = "abracadabra"
-char_frequency = char_count_for_loop(string)
+char_frequency = char_count(string)
 print(char_frequency)
 
 list1 = [1, 1, 1, 2, 2, 4, 5, 6, 8, 65, 0]
