@@ -55,5 +55,3 @@ def print_list(list, index=0):
     print_list(list, index+1)
 
 l1 = [1,3,4,'a','b']
-
-
