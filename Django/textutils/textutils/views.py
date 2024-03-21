@@ -6,16 +6,14 @@ def index(request):
     # return HttpResponse("Home")
     return render(request, 'index.html')
 def analyze(request):
-    return HttpResponse("Analyze Text.")
+    text = request.GET.get('text','default')
 
-'''
-# def removepunc(request):
-#     return HttpResponse("Remove Punctuations")
-# def capitalizefirst(request):
-#     return HttpResponse("Capitalize First")
-# def newlineremover(request):
-#     return HttpResponse("New line Remover")
-# def spaceremover(request):
-#     return HttpResponse("Sapce Remover")
-# def charcounter(request):
-#     return HttpResponse("Char Counter") '''
+    analyzed = ""
+    punctuations = '''!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~'''
+
+    for char in text:
+        if char not in punctuations:
+            analyzed = analyzed + char
+
+    params = {'purpose':'Remove Punctuations', 'analyzed_text': analyzed}
+    return render(request, 'analyze.html', params)
