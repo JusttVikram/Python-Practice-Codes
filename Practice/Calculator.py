@@ -16,4 +16,3 @@ def calculator(num1, num2, operator):
 
 result = calculator(5, 3, '+')
 print(result)
-
