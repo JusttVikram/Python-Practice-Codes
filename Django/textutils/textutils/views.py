@@ -15,19 +15,17 @@ def analyze(request):
     
     # Check if the removepunc parameter is set to 'on'
     removepunc = request.GET.get('removepunc','off')
+    # Check if the uppercase parameter is set to 'on'
+    uppercase = request.GET.get('uppercase','off')
     
     if removepunc == 'on':
-        # Initialize an empty string to store the analyzed text
+
         analyzed = ""
-        
-        # Define a string of punctuation characters
+
         punctuations = '''!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~'''
 
-        # Iterate over each character in the input text
         for char in input_text:
-            # Check if the character is not a punctuation character
             if char not in punctuations:
-                # Append the character to the analyzed string
                 analyzed = analyzed + char
 
         # Create a dictionary of parameters to pass to the analyze.html template
@@ -36,7 +34,14 @@ def analyze(request):
         # Render the analyze.html template with the parameters
         return render(request, 'analyze.html', params)
     
+    elif(uppercase == 'on'):
+        analyzed = ''
+        for char in input_text:
+            analyzed = analyzed + char.upper()
+        params = {'purpose':'Change to UpperCase', 'analyzed_text': analyzed}
+        return render(request, 'analyze.html', params)
+    
+
     else:
-        # If the removepunc parameter is not set to 'on', return an error message
         return HttpResponse('Error. Please tick the checkbox.')
 
