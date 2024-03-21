@@ -10,8 +10,12 @@
     <h2>Enter your text below : </h2>
     <form action="/analyze" method="get">
         <textarea name="text" cols="30" rows="10"></textarea> <br>
+        <input type="checkbox" name="uppercase"> Convert to UPPERCASE <br>
+        <input type="checkbox" name="charcounter"> Count Characters <br>
         <input type="checkbox" name="removepunc"> Remove Punctuations <br>
-        <input type="checkbox" name="uppercase"> UPPERCASE <br>
+        <input type="checkbox" name="newlineremover"> Remove New Line <br>
+        <input type="checkbox" name="extraspaceremover"> Remove Extra Space <br>
+
         <button type="submit">Analyze Text</button>
     </form>
 </body>
