@@ -11,7 +11,7 @@ def index(request):
 
 def analyze(request):
     # Get the text input from the request
-    text = request.GET.get('text','default')
+    input_text = request.GET.get('text','default')
     
     # Check if the removepunc parameter is set to 'on'
     removepunc = request.GET.get('removepunc','off')
@@ -24,7 +24,7 @@ def analyze(request):
         punctuations = '''!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~'''
 
         # Iterate over each character in the input text
-        for char in text:
+        for char in input_text:
             # Check if the character is not a punctuation character
             if char not in punctuations:
                 # Append the character to the analyzed string
@@ -38,5 +38,5 @@ def analyze(request):
     
     else:
         # If the removepunc parameter is not set to 'on', return an error message
-        return HttpResponse('Error. Please check the box.')
+        return HttpResponse('Error. Please tick the checkbox.')
 
