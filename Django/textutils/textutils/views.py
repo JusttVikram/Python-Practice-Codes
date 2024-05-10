@@ -11,7 +11,7 @@ def index(request):
 
 def analyze(request):
     # Get the text input from the request
-    input_text = request.GET.get('text','default')
+    input_text = request.POST.get('text','default')
     # Check if the removepunc parameter is set to 'on'
     removepunc = request.GET.get('removepunc','off')
     # Check if the uppercase parameter is set to 'on'

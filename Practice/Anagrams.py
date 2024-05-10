@@ -7,4 +7,3 @@ def is_anagram(str1, str2):
 
 print(is_anagram("test", "nest"))
 print(is_anagram("test", "tset"))
-
