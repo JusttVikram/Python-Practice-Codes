@@ -1,4 +1,4 @@
-def find_second_largest(numbers):
+def find_second_largest(List):
     largest = float('-inf')
     second_largest = float('-inf')
     
@@ -12,6 +12,6 @@ def find_second_largest(numbers):
     return second_largest
 
 
-List = [10, 5, 8, 20, 15]
-second_largest = find_second_largest(List)
+# List = [10, 5, 8, 20, 15]
+second_largest = find_second_largest([10, 5, 8, 20, 15])
 print("The second largest number is:", second_largest)
