@@ -1,5 +1,3 @@
-import sys
-
 def dijkstra(graph, start):
     # Initialize distances and visited nodes
     distances = {node: float('inf') for node in graph}
