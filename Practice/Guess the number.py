@@ -1,7 +1,7 @@
 import random
 
 target = random.randint(1,10)
-print(target)
+# print(target)
 
 while True:
     user_choice = input('Guess the number or  Quit (Q): ')
@@ -17,6 +17,5 @@ while True:
         print("Try smaller number.")
 
 print("------ KAISA LAGA... MAZA AAYA KI NAI ------")
-
-
-
+print("------ AUR KITNA KHELNA HAI ------")
+print("------ CHALO BYE ------")
