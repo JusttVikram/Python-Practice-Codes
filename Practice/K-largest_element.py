@@ -8,7 +8,6 @@ def find_k_largest(arr, k):
         if num > heap[0]:
             heapq.heapreplace(heap, num)
 
-    
     return heap
 
 arr = [5, 2, 1, 3, 7, 15, 25, 45, 18, 9, 12, 50, 3, 102, 30, 55, 88, 228]
