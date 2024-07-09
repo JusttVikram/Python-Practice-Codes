@@ -76,4 +76,3 @@ num2.show_number()
 
 (num2 - num1).show_number()
 
-
