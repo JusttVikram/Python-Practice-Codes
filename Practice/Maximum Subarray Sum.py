@@ -10,4 +10,4 @@ def max_subarray_sum(arr):
 
     return max_sum
 
-print(max_subarray_sum([1,3,4,5]))
+print(max_subarray_sum([1,3,4,5,8]))
