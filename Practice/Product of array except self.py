@@ -1,6 +1,4 @@
-# Leetcode 238
-
-def productExceptSelf(self, nums: List[int]) -> List[int]:
+def productExceptSelf(nums):
     n = len(nums)
     res = [1]*n
     left = 1
@@ -11,3 +9,7 @@ def productExceptSelf(self, nums: List[int]) -> List[int]:
         res[~i] *= right
         right *= nums[~i]
     return res
+
+
+nums = [1,2,3,4]
+print(productExceptSelf(nums)) # [24,12,8,6]
