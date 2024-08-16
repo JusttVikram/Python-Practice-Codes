@@ -1,4 +1,5 @@
 #  Leetcode 1732.
+from typing import List
 
 def largestAltitude(self, gain : List[int]) -> int:
     max = 0
