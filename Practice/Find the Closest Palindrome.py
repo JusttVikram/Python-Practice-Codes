@@ -1,4 +1,5 @@
 # Leetcode 564
+
 class Solution:
     def nearestPalindromic(self, n: str) -> str:
         l = len(n)
