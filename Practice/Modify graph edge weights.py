@@ -1,6 +1,5 @@
 # Leetcode 2699
 
-
 import heapq
 
 class Solution:
