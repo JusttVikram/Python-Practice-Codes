@@ -1,5 +1,7 @@
 # Leetcode 539
 
+from typing import List
+
 class Solution:
     def findMinDifference(self, timePoints: List[str]) -> int:
         timePoints.sort()
