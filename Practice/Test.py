@@ -10,3 +10,6 @@ def solution(k, a):
             count += freq[num + k]
         freq[num] = freq.get(num, 0) + 1
     return count % (10**9 + 7)
+
+
+
