@@ -1,5 +1,7 @@
 # Leetcode 179
 
+from typing import List
+
 class Solution:
     def largestNumber(self, nums: List[int]) -> str:
         nums = list(map(str, nums))
