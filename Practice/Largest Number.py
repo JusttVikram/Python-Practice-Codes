@@ -1,12 +1,7 @@
-a = input("Enter first number : ")
-b = input("Enter second number : ")
-c = input("Enter third number : ")
+# Leetcode 179
 
-
-if a>=b and b>=c:
-    # print(a + " is largest.")
-    print(f"{a} is largest.")
-elif b>=a and a>=c:
-    print(f"{b} is largest.")
-else:
-    print(f"{c} is largest.")
+class Solution:
+    def largestNumber(self, nums: List[int]) -> str:
+        nums = list(map(str, nums))
+        nums.sort(key = lambda x: x*10, reverse = True)
+        return str(int(''.join(nums)))
