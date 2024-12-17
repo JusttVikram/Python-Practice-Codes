@@ -1,5 +1,5 @@
 # Leetcode 1822
-
+from typing import List 
 class Solution:
     def arraySign(self, nums: List[int]) -> int:
         if 0 in nums:
